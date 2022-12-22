@@ -1,8 +1,8 @@
 import './App.css';
-import Expenses from './components/Expenses';
+import Expenses from './components/Expenses/Expenses';
 
 
-function App() {
+const App = () => {
   const expenses = [
     {id: '1', title: 'Car Insurance', amount: 295.67, date: new Date()},
     {id: '2', title: 'Toilet Paper', amount: 5.67, date: new Date()},
