@@ -3,6 +3,7 @@ import Card from '../Shared/Card';
 import './Expenses.css';
 import ExpensesFilter from '../ExpensesFilter/ExpensesFilter';
 import ExpensesList from './ExpensesList';
+import ExpensesChart from './ExpensesChart';
 
 const Expenses = (props) => {
 
@@ -19,6 +20,7 @@ const Expenses = (props) => {
     return (
         <Card className='expenses'>
             <ExpensesFilter filteredYear={filteredYear} onSelectListener={selectListener} />
+            <ExpensesChart expenses={filteredExpenses}/>
             <ExpensesList items={filteredExpenses}/>
         </Card>
     );
